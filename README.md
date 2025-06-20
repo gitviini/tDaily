@@ -1,15 +1,5 @@
-# neutralinojs-minimal
+## tDaily projectAdd commentMore actions
 
-The default template for a Neutralinojs app. It's possible to use your favorite frontend framework by using [these steps](https://neutralino.js.org/docs/getting-started/using-frontend-libraries).
+by: [gitviini](https://github.com/gitviini)
 
-## Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=neutralinojs/neutralinojs-minimal)](https://github.com/neutralinojs/neutralinojs-minimal/graphs/contributors)
-
-## License
-
-[MIT](LICENSE)
-
-## Icon credits
-
-- `trayIcon.png` - Made by [Freepik](https://www.freepik.com) and downloaded from [Flaticon](https://www.flaticon.com)
+Projeto feito para gerenciar tasks que são feitas diariamente (tDaily = tasks daily)
