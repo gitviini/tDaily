@@ -1,4 +1,4 @@
-## tDaily projectAdd commentMore actions
+## tDaily project
 
 by: [gitviini](https://github.com/gitviini)
 
