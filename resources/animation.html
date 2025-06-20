@@ -18,22 +18,13 @@
             scale: 0;
         }
 
-        50%{
+        50% {
             rotate: 0deg;
             scale: 0;
         }
-
-        85% {
-            rotate: 300deg;
-        }
-
-        100% {
-            rotate: 360deg;
-            scale: 1;
-        }
     }
 
-    .container{
+    .container {
         display: flex;
         flex-flow: column;
         width: 100%;
@@ -51,21 +42,17 @@
         }
 
         3% {
-            scale: 1.2;
+            scale: 7;
         }
 
-        15% {
+        10% {
+            scale: 1;
+        }
+
+        25% {
             scale: 1;
             translate: 0px;
         }
-
-        /* 30% {
-            translate: calc(-50vw + 1.5rem) calc(-50vh + 1.5rem);
-        }
-
-        35% {
-            translate: calc(-50vw + 1.5rem + 0.5rem) calc(-50vh + 1.5rem + 0.5rem);
-        } */
 
         30% {
             translate: calc(-50vw + 1.5rem) calc(-50vh + 1.5rem);
@@ -93,10 +80,14 @@
         }
 
         3% {
-            scale: 1.2;
+            scale: 7;
         }
 
-        15% {
+        10% {
+            scale: 1;
+        }
+
+        25% {
             scale: 1;
             translate: 0px;
         }
@@ -121,20 +112,20 @@
     }
 
     @keyframes line {
-        0%{
+        0% {
             height: 0px;
         }
 
-        80%{
+        80% {
             height: 0px;
         }
 
-        100%{
+        100% {
             height: 100%;
         }
     }
 
-    .line{
+    .line {
         position: absolute;
         top: 0;
         width: 2px;
@@ -143,22 +134,22 @@
         background-color: var(--border);
         animation: line 3s normal 0s 1;
     }
-    
+
     @keyframes title {
-        0%{
+        0% {
             width: 0px;
         }
 
-        80%{
+        80% {
             width: 0px;
         }
 
-        100%{
+        100% {
             width: 16rm;
         }
     }
 
-    .title{
+    .title {
         position: absolute;
         top: 1.5rem;
         width: 16rem;
@@ -169,20 +160,20 @@
     }
 
     @keyframes date {
-        0%{
+        0% {
             width: 0px;
         }
 
-        80%{
+        80% {
             width: 0px;
         }
 
-        100%{
+        100% {
             width: 6rm;
         }
     }
 
-    .date{
+    .date {
         position: absolute;
         top: 4rem;
         width: 6rem;
@@ -204,8 +195,10 @@
 </body>
 
 <script>
+    window.oncontextmenu = (e) => e.preventDefault()
     setTimeout(()=>{
         location.replace("/")
     },4500)
 </script>
+
 </html>
