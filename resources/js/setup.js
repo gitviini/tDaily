@@ -1,3 +1,13 @@
+read()
+
+window.oncontextmenu = (e) =>{
+    e.preventDefault()
+}
+
+function install(){
+    write([])
+    .then(()=>location.replace("/animation.html"))
+}
 
 function setTray() {
     if (NL_MODE != "window") {

@@ -18,7 +18,11 @@ async function read(){
     try{
         data = JSON.parse(await Neutralino.filesystem.readFile(NL_PATH + PATH))
     }
-    catch(err){}
+    catch(err){
+        if(location.pathname != "/install.html"){
+            location.replace("install.html")
+        }
+    }
 
     if(`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}` != data.date){
         data.content.forEach(task=>task.checked = false)

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tDaily</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<style>
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes container {
+        0% {
+            rotate: 0deg;
+            scale: 0;
+        }
+
+        50%{
+            rotate: 0deg;
+            scale: 0;
+        }
+
+        85% {
+            rotate: 300deg;
+        }
+
+        100% {
+            rotate: 360deg;
+            scale: 1;
+        }
+    }
+
+    .container{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        animation: container 1.6s normal 0s 1;
+        scale: 1;
+    }
+
+    @keyframes img {
+        0% {
+            scale: 0;
+            translate: 0;
+        }
+
+        3% {
+            scale: 1.2;
+        }
+
+        15% {
+            scale: 1;
+            translate: 0px;
+        }
+
+        /* 30% {
+            translate: calc(-50vw + 1.5rem) calc(-50vh + 1.5rem);
+        }
+
+        35% {
+            translate: calc(-50vw + 1.5rem + 0.5rem) calc(-50vh + 1.5rem + 0.5rem);
+        } */
+
+        30% {
+            translate: calc(-50vw + 1.5rem) calc(-50vh + 1.5rem);
+        }
+
+        35% {
+            translate: calc(-50vw + 1.5rem + 1rem) calc(-50vh + 1.5rem + 1rem);
+        }
+    }
+
+    .img {
+        translate: calc(-50vw + 1.5rem + 1rem) calc(-50vh + 1.5rem + 1rem);
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--gray);
+        border-radius: 3rem;
+        animation: img 3.5s normal 0.8s 1;
+    }
+
+    @keyframes theme {
+        0% {
+            scale: 0;
+            translate: 0;
+        }
+
+        3% {
+            scale: 1.2;
+        }
+
+        15% {
+            scale: 1;
+            translate: 0px;
+        }
+
+        30% {
+            translate: calc(-50vw + 1.5rem + 0.5rem) calc(50vh - 2rem);
+        }
+
+        35% {
+            translate: calc(-50vw + 1.5rem + 1rem) calc(50vh - 1.5rem - 1rem);
+        }
+    }
+
+    .theme {
+        translate: calc(-50vw + 1.5rem + 1rem) calc(50vh - 1.5rem - 1rem);
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--gray);
+        border-radius: 3rem;
+        animation: theme 3.5s normal 0.8s 1;
+    }
+
+    @keyframes line {
+        0%{
+            height: 0px;
+        }
+
+        80%{
+            height: 0px;
+        }
+
+        100%{
+            height: 100%;
+        }
+    }
+
+    .line{
+        position: absolute;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        left: var(--container-size);
+        background-color: var(--border);
+        animation: line 3s normal 0s 1;
+    }
+    
+    @keyframes title {
+        0%{
+            width: 0px;
+        }
+
+        80%{
+            width: 0px;
+        }
+
+        100%{
+            width: 16rm;
+        }
+    }
+
+    .title{
+        position: absolute;
+        top: 1.5rem;
+        width: 16rem;
+        height: 2rem;
+        left: calc(var(--container-size) + 1.5rem);
+        background-color: var(--border);
+        animation: title 4s normal 0s 1;
+    }
+
+    @keyframes date {
+        0%{
+            width: 0px;
+        }
+
+        80%{
+            width: 0px;
+        }
+
+        100%{
+            width: 6rm;
+        }
+    }
+
+    .date{
+        position: absolute;
+        top: 4rem;
+        width: 6rem;
+        height: 2rem;
+        left: calc(var(--container-size) + 1.5rem);
+        background-color: var(--border);
+        animation: date 4s normal 0s 1;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <div class="theme"></div>
+        <div class="line"></div>
+        <div class="title"></div>
+        <div class="date"></div>
+    </div>
+</body>
+
+<script>
+    setTimeout(()=>{
+        location.replace("/")
+    },4500)
+</script>
+</html>

@@ -60,11 +60,3 @@ function new_task(name = "", checked = false, instance = null, index) {
     document.querySelector(".container-tasks").appendChild(li)
     write(tasks)
 }
-
-function delete_task(instance){
-
-}
-
-function theme() {
-    document.querySelector("body").classList.toggle("light")
-}
