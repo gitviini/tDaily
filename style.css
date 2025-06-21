@@ -13,6 +13,7 @@ html {
     width: 100%;
     height: auto;
     background-color: var(--background);
+    overflow-x: hidden;
 
     /* * Sizes */
     --container-size: 5rem;
@@ -177,6 +178,12 @@ main {
     padding: calc(var(--padding) + 0.5rem);
     gap: calc(var(--gap) * 2);
 
+    #features{
+        img{
+            translate: 100px 0;
+        }
+    }
+
     #download {
         h2 {
             text-align: center;
@@ -185,6 +192,7 @@ main {
 
     #creator{
         width: auto;
+        padding-top: 10rem;
         img{
             width: calc(var(--container-size) * 2);
             border-radius: calc(var(--container-size) * 2);
@@ -230,7 +238,6 @@ main {
         padding-top: 1rem;
 
         h2 {
-            text-wrap: nowrap;
             width: 100%;
         }
 
@@ -351,4 +358,48 @@ button {
 
 ul {
     list-style: none;
+}
+
+@media screen and (max-width:700px) {
+    .row{
+        flex-flow: column;
+    }
+
+    main article{
+        align-items: center;
+        text-align: center;
+    }
+
+    main #features  img{
+        translate: 0;
+    }
+
+    .container-image{
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        overflow: auto;
+    }
+
+    main #download .row{
+        flex-flow: row;
+    }
+
+    main #appearance img{
+        &:nth-child(n){
+            max-width: 150px;
+        }
+    }
+
+    #creator{
+        h2{
+            text-align: center;
+        }
+        section{
+            text-align: left;
+        }
+        .row{
+            flex-flow: row wrap;
+        }
+    }
 }
