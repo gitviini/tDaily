@@ -1,4 +1,4 @@
-const image_path = "/src/static/img/"
+const image_path = "./src/static/img/"
 let colorScheme = true
 const colorSchemeInstance = window.matchMedia('(prefers-color-scheme: dark)')
 theme(colorSchemeInstance.matches)
