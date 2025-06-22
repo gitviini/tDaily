@@ -178,8 +178,8 @@ main {
     padding: calc(var(--padding) + 0.5rem);
     gap: calc(var(--gap) * 2);
 
-    #features{
-        img{
+    #features {
+        img {
             translate: 100px 0;
         }
     }
@@ -190,37 +190,39 @@ main {
         }
     }
 
-    #creator{
+    #creator {
         width: auto;
         padding-top: 10rem;
-        img{
+
+        img {
             width: calc(var(--container-size) * 2);
             border-radius: calc(var(--container-size) * 2);
         }
 
-        span{
+        span {
             opacity: 0.5;
         }
 
-        a{
+        a {
             display: flex;
             align-items: center;
             opacity: 0.5;
-            &:hover{
+
+            &:hover {
                 opacity: 1;
             }
 
-            svg{
+            svg {
                 height: 1.5rem;
                 fill: var(--foreground);
             }
         }
 
-        .container-links{
+        .container-links {
             gap: calc(var(--gap) / 2);
         }
 
-        .container-text{
+        .container-text {
             display: flex;
             flex-flow: column;
             gap: calc(var(--gap) / 2);
@@ -315,6 +317,10 @@ main {
 }
 
 footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
     height: calc(var(--container-size) * 2);
 }
 
@@ -361,44 +367,46 @@ ul {
 }
 
 @media screen and (max-width:700px) {
-    .row{
+    .row {
         flex-flow: column;
     }
 
-    main article{
+    main article {
         align-items: center;
         text-align: center;
     }
 
-    main #features  img{
+    main #features img {
         translate: 0;
     }
 
-    .container-image{
+    .container-image {
         display: flex;
         flex-flow: row;
         width: 100%;
         overflow: auto;
     }
 
-    main #download .row{
+    main #download .row {
         flex-flow: row;
     }
 
-    main #appearance img{
-        &:nth-child(n){
+    main #appearance img {
+        &:nth-child(n) {
             max-width: 150px;
         }
     }
 
-    #creator{
-        h2{
+    #creator {
+        h2 {
             text-align: center;
         }
-        section{
+
+        section {
             text-align: left;
         }
-        .row{
+
+        .row {
             flex-flow: row wrap;
         }
     }
